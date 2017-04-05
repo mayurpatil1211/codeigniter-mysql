@@ -48,9 +48,15 @@ class Welcome extends CI_Controller {
 			'contact' => $this->input->post('contact'),
 		
 		);
-	$this->load->model('Jobs'); 
+		// print_r($data);
+		$this->load->model('Jobs'); 
+		$this->Jobs->insertData($data);
+    	
+       	redirect('/Welcome/getdata');
+       	// $this->getData();
        
-         redirect('/Welcome/getdata');
+         
+       
 
 	
 	}

@@ -28,7 +28,7 @@
                   <h1 class="post-heading">Rest Api</h1>
                </div>
             </div>
-            <form action="insertData" method="post" enctype="multipart/form-data" name="myForm" ng-controller="app" novalidate>
+            <form action="insertData" method="post" name="myForm" ng-controller="app" novalidate>
               
 
                <div class="section">
